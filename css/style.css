@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Tangerine');
+ol { color: palevioletred ;
+    padding-left: 88px
+}
+ul { color: navy
+
+}
+
+.river {color: rgb(122, 135, 255);
+    display: inline-block;
+    margin-left: 500px ; 
+    margin-bottom: 50px
+}
+.music{
+    font-size : 33px
+}
+li:hover { color: blueviolet}
+#check { 
+    display: inline-block;
+    color: blue ;
+    background-color: aquamarine ;
+    margin: 10px ;
+    padding: 1px
+}
+#hello  {
+    color:black;
+    margin:auto;
+    font-size: 150px
+}
+#hello:hover {
+  
+    color: black;
+    
+}
+.h{
+    display:grid;
+    position: relative;
+    border: 3px  rgb(57, 142, 163);
+    background-image: url('https://images.unsplash.com/photo-1503662549813-28954e75f215?ixlib=rb-0.3.5&s=41bbd51ba34e0c8e093c9d92a6863e91&auto=format&fit=crop&w=1050&q=80');
+    height: 400px ; 
+    background-size: 100%;
+    background-repeat: no-repeat ;
+   
+}
+.h:hover{ 
+    background-image: url('https://images.unsplash.com/photo-1503494201477-5e04f651cfe5?ixlib=rb-0.3.5&s=b017491a0b05966b5369d3e1f1b03747&auto=format&fit=crop&w=1050&q=80');
+    display:grid;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    border: 3px  rgb(57, 142, 163);
+    height: 400px ; 
+}
+#for { 
+    display: inline-block;
+   color: rgb(16, 131, 51);
+    margin-left: 44px;
+    font-size: 25px ; 
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -9px;
+}
+#name{ 
+    display: inline-block;
+    margin-left: 380px 
+}
+
+#welcome {
+   color: black ;
+    display: inline-block;
+    margin-left: 33px ;
+   margin-top: 2px; 
+    font-size: 35px ;
+  
+}
+h6 {
+    font-family: 'Sacramento', cursive;
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 09px;
+}
+.block {
+    display: inline;
+    background-color: antiquewhite
+}
+.para { 
+    background-color: rgb(240, 234, 234);
+    padding: 45px;
+    width: 45%;
+    display: inline-block;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s;
+}
+.para:hover {
+    outline: 6px solid rgb(0, 0, 0);
+    transition: all .3s;
+    outline-offset: -6px;
+    
+}
+#ar {
+    font-size: 35px
+}
+#lyrics { 
+    font-size: 35px
+}
+
+
+.wrapper {
+	margin: 0 auto 100px auto;
+	max-width: 960px;
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+.scene {
+	width: 260px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	perspective: 1000px;
+}
+.movie {
+	width: 260px;
+	height: 400px;
+	transform-style: preserve-3d;
+	transform: translateZ(-130px);
+	transition: transform 350ms;
+}
+.movie:hover {
+	transform: rotateY(-78deg) translateZ(20px);
+}
+.movie .poster, 
+.movie .info {
+  position: absolute;
+  width: 260px;
+  height: 400px;
+  background-color: #fff;
+  backface-visibility: hidden;
+}
+.movie .poster  {
+    transform: translateZ(130px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .movie .info {
+    transform: rotateY(90deg) translateZ(130px);
+    border: 1px solid #B8B5B5;
+    font-size: 0.75em;
+  }
+  .movie::after {
+    content: '';
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+    transform-origin: 100% 100%;
+    transform: rotateX(90deg) translateY(130px);
+    transition: box-shadow 350ms;
+  }
+  
+  .movie:hover::after {
+    box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+  }
+  .info header {
+    color: #FFF;
+    padding: 7px 10px;
+    font-weight: bold;
+    height: 195px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-shadow: 0px 1px 1px rgba(0,0,0,1);
+  }
+  
+  .info header h1 {
+    margin: 0 0 2px;
+    font-size: 1.4em;
+  }
+  
+  .info header .rating {
+    border: 1px solid #FFF;
+    padding: 0px 3px;
+  }
+  
+  .info p {
+    padding: 1.2em 1.4em;
+    margin: 2px 0 0;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.4em;
+    border-top: 15px solid #555;
+    margin-top: -33px
+  }
+  .movie .poster,
+.movie .info,
+.movie .info header {
+  transition: box-shadow 350ms;
+}
+
+.movie .poster {
+  box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.movie:hover .poster {
+  box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+.movie .info, 
+.movie .info header {
+  box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.movie:hover .info, 
+.movie:hover .info header {
+  box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+.scene:nth-child(1) .movie .poster {
+    background-image: url(https://cdn.wallpapersafari.com/41/40/zjNWOS.png);
+  }
+  
+  .scene:nth-child(2) .poster {
+    background-image: url(https://i.pinimg.com/originals/5b/9f/38/5b9f382832b45ada71016dfcc1668fc7.png);
+  }
+  
+  .scene:nth-child(3) .poster {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BY2U4MGI0MWUtODE0MS00YjliLWI3MmQtYTZhYWEwYWFmMTMyXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_UY268_CR9,0,182,268_AL_.jpg);
+  }
+  
+  .scene:nth-child(1) .info header {
+    background-image: url(https://i.ytimg.com/vi/UgFllp3Alsg/hqdefault.jpg);
+    
+  }
+  
+  .scene:nth-child(2) .info header {
+    background-image: url(https://vignette.wikia.nocookie.net/wherearetheavocados/images/4/4b/Billie-spotify-video1.jpg/revision/latest?cb=20180104115603);
+  }
+  
+  .scene:nth-child(3) .info header {
+    background-image: url(https://directlyrics.com/img/upload/imagine-dragons-natural-video-youtube.jpg);
+  }
